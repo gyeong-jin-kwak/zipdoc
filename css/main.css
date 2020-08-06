@@ -329,6 +329,7 @@ header .right-col .interior-link > span {
   text-align: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  word-break: keep-all;
   background-image: url("../../images/review.jpg");
   background-repeat: no-repeat;
   background-size: cover;
