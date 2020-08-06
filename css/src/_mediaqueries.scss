@@ -49,4 +49,32 @@
       }
     }
   }
+
+  // content
+  .content {
+    min-width: 100%;
+
+    &-banner {
+      height: 375px;
+      margin-top: 52px;
+      padding: 80px 0 0 0;
+      background-image: url('../../images/banner_mo.png');
+      background-position: 0 0;
+      background-size: 100% auto;
+    }
+
+    .banner-tit {
+      margin-bottom: 20px;
+      font-size: 19px;
+      line-height: 30px;
+      font-weight: 500;
+    }
+
+    .banner-btn {
+      width: 190px;
+      height: 45px;
+      font-size: 15px;
+      line-height: 45px;
+    }
+  }
 }
