@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, div, table, thead, tr, td, tbody, form, textarea, button, select {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+em, address {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body, input, textarea, select, button, table {
+  font: 14px 'Noto Sans KR', 'sans-serif';
+}

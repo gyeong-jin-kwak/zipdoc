@@ -1,0 +1,80 @@
+@charset "UTF-8";
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, div, table, thead, tr, td, tbody, form, textarea, button, select {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+em, address {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body, input, textarea, select, button, table {
+  font: 14px 'Noto Sans KR', 'sans-serif';
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.layout-wrap {
+  width: 100%;
+  min-width: 1136px;
+  height: 100%;
+}
+
+header {
+  padding: 16px 3.9%;
+  background: #fff;
+}
+
+header .header-wrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header .home {
+  display: inline-block;
+  width: 130px;
+  height: 53px;
+  margin-right: 16%;
+}
+
+header .home img {
+  width: 100%;
+}
+
+header .nav {
+  float: left;
+}
+
+header .header-wrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* 미디어쿼리 */
+/*# sourceMappingURL=main.css.map */

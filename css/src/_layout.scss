@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+.layout-wrap {
+  width: 100%;
+  min-width: 1136px;
+  height: 100%;
+}
+
+header {
+  padding: 16px 3.9%;
+  background: #fff;
+}
+
+header .header-wrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header .home {
+  display: inline-block;
+  width: 130px;
+  height: 53px;
+  margin-right: 16%;
+}
+
+header .home img {
+  width: 100%;
+}
+
+header .nav {
+  float: left;
+}
+
+header .header-wrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
