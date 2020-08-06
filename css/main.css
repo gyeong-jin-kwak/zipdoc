@@ -323,6 +323,50 @@ header .right-col .interior-link > span {
   display: block;
 }
 
+.content-review {
+  height: 462px;
+  padding-top: 106px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url("../../images/review.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.content-review .thumbnail {
+  width: 84px;
+  height: 84px;
+  display: inline-block;
+  overflow: hidden;
+  margin-bottom: 28px;
+  border: 4px solid #fff;
+  border-radius: 50%;
+}
+
+.content-review .thumbnail img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.content-review .reviewer {
+  width: 100%;
+  display: inline-block;
+  font-size: 22px;
+  line-height: 1.46;
+  color: #fff;
+}
+
+.content-review .reviewer .from {
+  display: inline-block;
+  width: 100%;
+  padding-top: 32px;
+  font-size: 16px;
+}
+
 /* 미디어쿼리 */
 @media (max-width: 415px) {
   .layout-wrap {
@@ -408,9 +452,11 @@ header .right-col .interior-link > span {
     font-size: 14px;
   }
   .content-point {
-    padding: 10% 0;
     width: 100%;
     overflow-x: auto;
+  }
+  .content-point.swiper-container {
+    padding: 10% 0 18%;
   }
   .content-point .point-list {
     width: 1200px;
@@ -432,6 +478,32 @@ header .right-col .interior-link > span {
   }
   .content-point .swiper-pagination {
     display: block;
+  }
+  .content-point .swiper-pagination-bullet-active {
+    width: 20px;
+    border-radius: 4px;
+    background: #639fea;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .content-point .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 28px;
+  }
+  .content-review {
+    padding: 25% 0;
+  }
+  .content-review .thumbnail {
+    width: 70px;
+    height: 70px;
+    border: 3px solid #fff;
+  }
+  .content-review .reviewer {
+    max-width: calc(100% - 40px);
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .content-review .from {
+    padding-top: 20px;
   }
 }
 /*# sourceMappingURL=main.css.map */

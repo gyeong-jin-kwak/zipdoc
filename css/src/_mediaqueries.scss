@@ -98,9 +98,12 @@
     }
 
     &-point {
-      padding: 10% 0;
       width: 100%;
       overflow-x: auto;
+      
+      &.swiper-container {
+        padding: 10% 0 18%;
+      }
 
       .point-list {
         width: 1200px;
@@ -127,6 +130,37 @@
 
       .swiper-pagination {
         display: block;
+      }
+
+      .swiper-pagination-bullet-active {
+        width: 20px;
+        border-radius: 4px;
+        background: #639fea;
+        transition: all 0.3s;
+      }
+
+      .swiper-container-horizontal>.swiper-pagination-bullets {
+        bottom: 28px;
+      }
+    }
+
+    &-review {
+      padding: 25% 0;
+
+      .thumbnail {
+        width: 70px;
+        height: 70px;
+        border: 3px solid #fff;
+      }
+
+      .reviewer {
+        max-width: calc(100% - 40px);
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      .from {
+        padding-top: 20px;
       }
     }
   }
