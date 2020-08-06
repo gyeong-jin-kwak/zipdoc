@@ -150,4 +150,33 @@ header {
       background: #f60;
     }
   }
+
+  &-expert {
+    height: 500px;
+    padding-top: 106px;
+    text-align: center;
+    background: #f4f5f7;
+    background-image: url('../../images/expert.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 1178px 285px;
+
+    .expert-tit {
+      display: inline-block;
+      margin-bottom: 30px;
+      padding-right: 32px;
+      font-size: 36px;
+      font-weight: 400;
+      background-image: url("../../images/ico_arrow.png");
+      background-repeat: no-repeat;
+      background-position: 100% 15px;
+      background-size: 20px 14px;
+    }
+
+    .expert-subtit {
+      display: block;
+      margin-top: 25px;
+      font-size: 20px;
+    }
+  }
 }
