@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>곽경진 집닥 과제</title>
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" media="screen and (max-width: 415px)" href="./css/swiper.min.css" />
+  <script src="./js/jquery-3.5.1.min.js"></script>
+  <script src="./js/swiper.min.js"></script>
+  <script src="./js/common.js"></script>
 </head>
 <body>
   <div class="layout-wrap">
@@ -47,7 +51,54 @@
         </strong>
       </div>
     </div>
+
+    <div class="content-point swiper-container">
+      <ul class="point-list swiper-wrapper">
+        <li class="point-item swiper-slide">
+          <div class="point-item-img">
+            <img src="./images/point01.png" alt="엄선한 전문가" aria-hidden="true">
+          </div>
+          <strong class="point-item-head">엄선한 전문가</strong>
+          <p class="point-item-content">
+            간단한 수리부터 인테리어 종합 시공까지 <br>
+            전문 기술을 갖춘 인테리어 전문가를 <br>
+            엄선했습니다.
+          </p>
+        </li>
+        <li class="point-item swiper-slide">
+          <div class="point-item-img">
+            <img src="./images/point02.png" alt="신청서 간편 작성" aria-hidden="true">
+          </div>
+          <strong class="point-item-head">신청서 간편 작성</strong>
+          <p class="point-item-content">
+            간편한 클릭만으로 내게 필요한 신청서를 작성해 <br>
+            한번에 5개 전문가에게 <br>
+            견적을 신청할 수 있습니다.
+          </p>
+        </li>
+        <li class="point-item swiper-slide">
+          <div class="point-item-img">
+            <img src="./images/point03.png" alt="고객 솔직 리뷰" aria-hidden="true">
+          </div>
+          <strong class="point-item-head">고객 솔직 리뷰</strong>
+          <p class="point-item-content">
+            고객이 직접 작성한 리뷰를 통해 <br>
+            딱 맞는 전문가를 선택해보세요. <br>
+            <span class="gray">(서비스 예정)</span>
+          </p>
+        </li>
+      </ul>
+      <div class="swiper-pagination"></div>
+    </div>
     <!-- e: content -->
   </div>
+
+  <script>
+    new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
 </body>
 </html>
