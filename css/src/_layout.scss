@@ -111,6 +111,10 @@ header {
       }
     }
   }
+
+  .mobile-panel {
+    display: none;
+  }
 }
 
 // content
@@ -501,6 +505,66 @@ header {
         text-overflow: ellipsis;
         white-space: nowrap;
         font-size: 18px;
+      }
+    }
+  }
+}
+
+// footer
+footer {
+  $root: '.footer';
+  width: 100%;
+  min-width: 1200px;
+  height: 181px;
+  padding: 42px 0 48px;
+  box-sizing: border-box; 
+  background: #53545f; 
+
+  .footer-wrap {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+
+    #{$root}-logo {
+      position: absolute;
+      top: 36px;
+      left: 0;
+      width: 50px;
+      height: 58px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .link-list {
+      @include clearfix;
+      margin-left: 120px;
+      padding-bottom: 20px;
+      color: #fff;
+      font-size: 13px;
+
+      &-item {
+        float: left;
+        margin-right: 30px;
+      }
+    }
+
+    .footer-detail {
+      @include clearfix;
+      padding-left: 120px;
+      opacity: .5;
+      color: #fff;
+      font-size: 13px;
+      line-height: 1.6;
+
+      #{$root}-company {
+        float: left;
+      }
+
+      #{$root}-copyright {
+        float: right;
       }
     }
   }
