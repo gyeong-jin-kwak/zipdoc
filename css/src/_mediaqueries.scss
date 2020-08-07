@@ -155,7 +155,9 @@
       }
 
       .reviewer {
-        max-width: calc(100% - 40px);
+        max-width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
         font-size: 16px;
         line-height: 1.5;
       }
@@ -172,9 +174,10 @@
       padding-top: 50px;
 
       #{$root}-head{
-        width: calc(100% - 40px);
+        width: 100%;
         margin: 0 auto;
-        padding-bottom: 24px;
+        padding: 0 20px 24px 20px;
+        box-sizing: border-box;
       }
 
       #{$root}-tit {
@@ -227,13 +230,13 @@
     &-tip {
       $root: '.tip';
 
-      width: calc(100% - 40px);
-      margin: 0 auto;
-      padding: 50px 0;
+      width: 100%;
+      padding: 50px 20px;
+      box-sizing: border-box;
 
       #{$root}-list {
         #{$root}-item {
-          width: calc(50% - 10px);
+          width: 48%;
           padding-bottom: 20px;
   
           &:nth-of-type(even) {
@@ -279,6 +282,103 @@
         font-size: 13px;
         word-break: keep-all;
         line-height: 1.38;
+      }
+    }
+
+    &-calc {
+      $root: '.calc';
+
+      width: 100%;
+      height: 428px;
+      
+      #{$root}-wrap {
+        width: 100%;
+        padding: 40px;
+        box-sizing: border-box;
+        background-size: 254px 242px;
+        background-position-x: 80%;
+      }
+
+      #{$root}-tit {
+        word-break: keep-all;
+        font-size: 17.5px;
+      }
+
+      #{$root}-body {
+        padding-bottom: 20px;
+        font-size: 12px;
+      }
+
+      #{$root}-btn {
+        width: 119px;
+        font-size: 13px;
+      }
+    }
+
+    &-check {
+      $root: '.check';
+
+      width: 100%;
+      padding: 50px 0 70px;
+
+      #{$root}-head{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 20px 24px 20px;
+        box-sizing: border-box;
+      }
+
+      #{$root}-tit {
+        font-size: 18px;
+      }
+
+      #{$root}-more {
+        margin-top: 4px;
+        font-size: 13px;
+      }
+
+      #{$root}-list-wrapper {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+        overflow-x: auto;
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+
+        &::-webkit-scrollbar {
+          display: none; /* Chrome, Safari, Opera*/
+        }
+      }
+
+      #{$root}-list {
+        width: 642px;
+      }
+
+      #{$root}-item {
+        width: 149px;
+
+        .check-img {
+          height: 106px;
+          margin-bottom: 15px;
+          border-radius: 6px;
+
+          img {
+            border-radius: 6px;
+          }
+        }
+
+        &:not(:last-child) {
+          margin-right: 9px;
+        }
+        
+        &-label {
+          padding-bottom: 5px;
+          font-size: 12px;
+        }
+
+        &-body {
+          font-size: 15px;
+        }
       }
     }
   }

@@ -2,8 +2,9 @@ $(document).ready(function(){
   var width = $(window).width();
 
   $(window).on('resize', function() {
-    if ($(this).width() !== width) {
-      this.location.href = this.location.href;
+    if ($(this).width() != width) {
+      // this.location.href = this.location.href;
+      document.location.reload();
     }
   });
 

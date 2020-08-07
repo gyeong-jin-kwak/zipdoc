@@ -403,7 +403,7 @@ header .right-col .interior-link > span {
 
 .content-buildtype .buildtype-item {
   position: relative;
-  width: calc(20% - 20px);
+  width: 18.3%;
   height: 280px;
   float: left;
   border-radius: 8px;
@@ -491,6 +491,123 @@ header .right-col .interior-link > span {
 .content-tip .step-content {
   font-size: 15px;
   line-height: 1.43;
+}
+
+.content-calc {
+  height: 462px;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.content-calc .calc-wrap {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 120px 0 120px 127px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url("../../images/calc.png");
+  background-size: 435px 398px;
+  background-repeat: no-repeat;
+  background-position-x: 86%;
+  background-position-y: bottom;
+}
+
+.content-calc .calc-tit {
+  padding-bottom: 20px;
+  line-height: 1;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.content-calc .calc-body {
+  padding-bottom: 50px;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+.content-calc .calc-btn {
+  display: inline-block;
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  border: 2px solid #f60;
+  border-radius: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: #f60;
+  background: transparent;
+}
+
+.content-check {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+.content-check .check-head {
+  padding-bottom: 40px;
+}
+
+.content-check .check-head::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.content-check .check-tit {
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.content-check .check-more {
+  float: right;
+  margin-top: 6px;
+}
+
+.content-check .check-list::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.content-check .check-item {
+  width: 23.5%;
+  float: left;
+}
+
+.content-check .check-item .check-img {
+  width: 100%;
+  height: 211px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.content-check .check-item .check-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.content-check .check-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.content-check .check-item-label {
+  display: block;
+  padding-bottom: 10px;
+  color: #639fea;
+  font-size: 14px;
+}
+
+.content-check .check-item-body {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 18px;
 }
 
 /* 미디어쿼리 */
@@ -625,7 +742,10 @@ header .right-col .interior-link > span {
     border: 3px solid #fff;
   }
   .content-review .reviewer {
-    max-width: calc(100% - 40px);
+    max-width: 100%;
+    padding: 0 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-size: 16px;
     line-height: 1.5;
   }
@@ -637,9 +757,11 @@ header .right-col .interior-link > span {
     padding-top: 50px;
   }
   .content-buildtype .buildtype-head {
-    width: calc(100% - 40px);
+    width: 100%;
     margin: 0 auto;
-    padding-bottom: 24px;
+    padding: 0 20px 24px 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .content-buildtype .buildtype-tit {
     font-size: 18px;
@@ -683,12 +805,13 @@ header .right-col .interior-link > span {
     margin-right: 10px;
   }
   .content-tip {
-    width: calc(100% - 40px);
-    margin: 0 auto;
-    padding: 50px 0;
+    width: 100%;
+    padding: 50px 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .content-tip .tip-list .tip-item {
-    width: calc(50% - 10px);
+    width: 48%;
     padding-bottom: 20px;
   }
   .content-tip .tip-list .tip-item:nth-of-type(even) {
@@ -725,6 +848,87 @@ header .right-col .interior-link > span {
     font-size: 13px;
     word-break: keep-all;
     line-height: 1.38;
+  }
+  .content-calc {
+    width: 100%;
+    height: 428px;
+  }
+  .content-calc .calc-wrap {
+    width: 100%;
+    padding: 40px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background-size: 254px 242px;
+    background-position-x: 80%;
+  }
+  .content-calc .calc-tit {
+    word-break: keep-all;
+    font-size: 17.5px;
+  }
+  .content-calc .calc-body {
+    padding-bottom: 20px;
+    font-size: 12px;
+  }
+  .content-calc .calc-btn {
+    width: 119px;
+    font-size: 13px;
+  }
+  .content-check {
+    width: 100%;
+    padding: 50px 0 70px;
+  }
+  .content-check .check-head {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px 24px 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .content-check .check-tit {
+    font-size: 18px;
+  }
+  .content-check .check-more {
+    margin-top: 4px;
+    font-size: 13px;
+  }
+  .content-check .check-list-wrapper {
+    width: 100%;
+    padding: 0 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+  .content-check .check-list-wrapper::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera*/
+  }
+  .content-check .check-list {
+    width: 642px;
+  }
+  .content-check .check-item {
+    width: 149px;
+  }
+  .content-check .check-item .check-img {
+    height: 106px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+  }
+  .content-check .check-item .check-img img {
+    border-radius: 6px;
+  }
+  .content-check .check-item:not(:last-child) {
+    margin-right: 9px;
+  }
+  .content-check .check-item-label {
+    padding-bottom: 5px;
+    font-size: 12px;
+  }
+  .content-check .check-item-body {
+    font-size: 15px;
   }
 }
 /*# sourceMappingURL=main.css.map */
