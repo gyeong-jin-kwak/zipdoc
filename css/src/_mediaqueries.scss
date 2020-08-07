@@ -105,23 +105,23 @@
         background-repeat: no-repeat;
 
         &:nth-of-type(1) {
-          background-image: url('../../images/ico_arrow_simple.png'), url('../../images/ico_nav1.png');
+          background-image: url('../images/ico_arrow_simple.png'), url('../images/ico_nav1.png');
         }
 
         &:nth-of-type(2) {
-          background-image: url('../../images/ico_arrow_simple.png'), url('../../images/ico_nav2.png');
+          background-image: url('../images/ico_arrow_simple.png'), url('../images/ico_nav2.png');
         }
 
         &:nth-of-type(3) {
-          background-image: url('../../images/ico_arrow_simple.png'), url('../../images/ico_nav3.png');
+          background-image: url('../images/ico_arrow_simple.png'), url('../images/ico_nav3.png');
         }
 
         &:nth-of-type(4) {
-          background-image: url('../../images/ico_arrow_simple.png'), url('../../images/ico_nav4.png');
+          background-image: url('../images/ico_arrow_simple.png'), url('../images/ico_nav4.png');
         }
 
         &:nth-of-type(5) {
-          background-image: url('../../images/ico_arrow_simple.png'), url('../../images/ico_nav5.png');
+          background-image: url('../images/ico_arrow_simple.png'), url('../images/ico_nav5.png');
         }
 
         a {
@@ -166,7 +166,7 @@
       height: auto;
       margin-top: 52px;
       padding: 18% 0;
-      background-image: url('../../images/banner_mo.png');
+      background-image: url('../images/banner_mo.png');
       background-position: 0 0;
       background-size: 100% auto;
 
@@ -188,7 +188,7 @@
     &-expert {
       height: auto;
       padding: 10% 0 27%;
-      background-image: url('../../images/expert_mo.png');
+      background-image: url('../images/expert_mo.png');
       background-size: 352px 89px;
 
       .expert-tit {
