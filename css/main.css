@@ -427,6 +427,72 @@ header .right-col .interior-link > span {
   font-weight: bolder;
 }
 
+.content-tip {
+  width: 1060px;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+.content-tip .tip-list::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.content-tip .tip-list .tip-item {
+  position: relative;
+  float: left;
+  width: 220px;
+  text-align: center;
+  color: #333;
+}
+
+.content-tip .tip-list .tip-item:not(:last-child) {
+  margin-right: 60px;
+}
+
+.content-tip .tip-list .tip-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 80px;
+  right: -60px;
+  width: 60px;
+  height: 1px;
+  background: #ccc;
+}
+
+.content-tip .tip-tit {
+  padding-bottom: 50px;
+  text-align: center;
+  color: #333;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.content-tip .tip-img {
+  width: 160px;
+  height: 160px;
+  margin: 0 auto;
+  padding-bottom: 26px;
+}
+
+.content-tip .tip-img img {
+  width: 100%;
+  height: auto;
+}
+
+.content-tip .step {
+  display: block;
+  padding-bottom: 12px;
+  font-size: 20px;
+}
+
+.content-tip .step-content {
+  font-size: 15px;
+  line-height: 1.43;
+}
+
 /* 미디어쿼리 */
 @media (max-width: 415px) {
   .layout-wrap {
@@ -615,6 +681,50 @@ header .right-col .interior-link > span {
   }
   .content-buildtype .buildtype-item:not(:last-child) {
     margin-right: 10px;
+  }
+  .content-tip {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+  .content-tip .tip-list .tip-item {
+    width: calc(50% - 10px);
+    padding-bottom: 20px;
+  }
+  .content-tip .tip-list .tip-item:nth-of-type(even) {
+    float: right;
+  }
+  .content-tip .tip-list .tip-item:nth-of-type(even)::after {
+    display: none;
+  }
+  .content-tip .tip-list .tip-item:not(:last-child) {
+    margin-right: 0px;
+  }
+  .content-tip .tip-list .tip-item:not(:last-child)::after {
+    content: "";
+    top: 60px;
+    right: -20px;
+    width: 20px;
+  }
+  .content-tip .tip-tit {
+    padding-bottom: 30px;
+    font-size: 20px;
+    line-height: 1;
+  }
+  .content-tip .tip-img {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+    padding: 0;
+  }
+  .content-tip .step {
+    padding-bottom: 10px;
+    font-size: 18px;
+  }
+  .content-tip .step-content {
+    font-size: 13px;
+    word-break: keep-all;
+    line-height: 1.38;
   }
 }
 /*# sourceMappingURL=main.css.map */
