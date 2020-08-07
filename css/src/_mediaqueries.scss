@@ -57,7 +57,7 @@
     &-banner {
       height: auto;
       margin-top: 52px;
-      padding: 20% 0;
+      padding: 18% 0;
       background-image: url('../../images/banner_mo.png');
       background-position: 0 0;
       background-size: 100% auto;
@@ -145,6 +145,7 @@
     }
 
     &-review {
+      height: auto;
       padding: 25% 0;
 
       .thumbnail {
@@ -161,6 +162,65 @@
 
       .from {
         padding-top: 20px;
+      }
+    }
+
+    &-buildtype {
+      $root: '.buildtype';
+
+      width: 100%;
+      padding-top: 50px;
+
+      #{$root}-head{
+        width: calc(100% - 40px);
+        margin: 0 auto;
+        padding-bottom: 24px;
+      }
+
+      #{$root}-tit {
+        font-size: 18px;
+      }
+
+      #{$root}-more {
+        margin-top: 4px;
+        font-size: 13px;
+      }
+
+      #{$root}-list-wrapper {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+        overflow-x: auto;
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+
+        &::-webkit-scrollbar {
+          display: none; /* Chrome, Safari, Opera*/
+        }
+      }
+
+      #{$root}-list {
+        width: 730px;
+      }
+
+      #{$root}-item {
+        width: 135px;
+        height: 160px;
+
+        img {
+          width: 100%;
+        }
+
+        &-tit {
+          left: 20px;
+          bottom: 20px;
+          color: #fff;
+          font-size: 15px;
+        }
+
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
       }
     }
   }

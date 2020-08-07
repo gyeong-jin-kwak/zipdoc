@@ -368,6 +368,65 @@ header .right-col .interior-link > span {
   font-size: 16px;
 }
 
+.content-buildtype {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+.content-buildtype .buildtype-head {
+  padding-bottom: 40px;
+}
+
+.content-buildtype .buildtype-head::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.content-buildtype .buildtype-tit {
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.content-buildtype .buildtype-more {
+  float: right;
+  margin-top: 6px;
+}
+
+.content-buildtype .buildtype-list::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.content-buildtype .buildtype-item {
+  position: relative;
+  width: calc(20% - 20px);
+  height: 280px;
+  float: left;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.content-buildtype .buildtype-item img {
+  border-radius: 8px;
+}
+
+.content-buildtype .buildtype-item:not(:last-child) {
+  margin-right: 25px;
+}
+
+.content-buildtype .buildtype-item-tit {
+  position: absolute;
+  left: 24px;
+  bottom: 30px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
 /* 미디어쿼리 */
 @media (max-width: 415px) {
   .layout-wrap {
@@ -418,7 +477,7 @@ header .right-col .interior-link > span {
   .content-banner {
     height: auto;
     margin-top: 52px;
-    padding: 20% 0;
+    padding: 18% 0;
     background-image: url("../../images/banner_mo.png");
     background-position: 0 0;
     background-size: 100% auto;
@@ -491,6 +550,7 @@ header .right-col .interior-link > span {
     bottom: 28px;
   }
   .content-review {
+    height: auto;
     padding: 25% 0;
   }
   .content-review .thumbnail {
@@ -505,6 +565,56 @@ header .right-col .interior-link > span {
   }
   .content-review .from {
     padding-top: 20px;
+  }
+  .content-buildtype {
+    width: 100%;
+    padding-top: 50px;
+  }
+  .content-buildtype .buildtype-head {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    padding-bottom: 24px;
+  }
+  .content-buildtype .buildtype-tit {
+    font-size: 18px;
+  }
+  .content-buildtype .buildtype-more {
+    margin-top: 4px;
+    font-size: 13px;
+  }
+  .content-buildtype .buildtype-list-wrapper {
+    width: 100%;
+    padding: 0 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+  .content-buildtype .buildtype-list-wrapper::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera*/
+  }
+  .content-buildtype .buildtype-list {
+    width: 730px;
+  }
+  .content-buildtype .buildtype-item {
+    width: 135px;
+    height: 160px;
+  }
+  .content-buildtype .buildtype-item img {
+    width: 100%;
+  }
+  .content-buildtype .buildtype-item-tit {
+    left: 20px;
+    bottom: 20px;
+    color: #fff;
+    font-size: 15px;
+  }
+  .content-buildtype .buildtype-item:not(:last-child) {
+    margin-right: 10px;
   }
 }
 /*# sourceMappingURL=main.css.map */

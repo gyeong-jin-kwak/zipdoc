@@ -271,4 +271,58 @@ header {
       }
     }
   }
+
+  &-buildtype {
+    $root: '.buildtype';
+
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 80px;
+
+    #{$root}-head {
+      @include clearfix;
+      padding-bottom: 40px;
+    }
+
+    #{$root}-tit {
+      float: left;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    #{$root}-more {
+      float: right;
+      margin-top: 6px;
+    }
+
+    #{$root}-list {
+      @include clearfix;
+    }
+
+    #{$root}-item {
+      position: relative;
+      width: calc(20% - 20px);
+      height: 280px;
+      float: left;
+      border-radius: 8px;
+      overflow: hidden;
+
+      img {
+        border-radius: 8px; //safari
+      }
+
+      &:not(:last-child) {
+        margin-right: 25px;
+      }
+
+      &-tit {
+        position: absolute;
+        left: 24px;
+        bottom: 30px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: bolder;
+      }
+    }
+  }
 }
